@@ -13,13 +13,13 @@ class AddNote extends React.Component {
     }
 
     handleAddNote(nameNote, folderId, content) {
-        fetch(`${config.API_ENDPOINT}api/notes`, {
+        fetch(`${config.API_ENDPOINT}notes`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                "name": nameNote.value,
+                "note_name": nameNote.value,
                 "modified": new Date(),
                 "folder_id": folderId.value,
                 "content": content.value

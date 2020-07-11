@@ -1,3 +1,3 @@
 export default {
-  API_ENDPOINT: 'https://thawing-anchorage-79767.herokuapp.com/'
+  API_ENDPOINT: 'https://polar-peak-45473.herokuapp.com/'
 }

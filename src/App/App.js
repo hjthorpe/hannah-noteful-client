@@ -23,8 +23,8 @@ componentDidMount(){
     handleGetNotes = ()=>{
         console.log('Fetching new info!')
         Promise.all([
-            fetch(`${config.API_ENDPOINT}api/notes`),
-            fetch(`${config.API_ENDPOINT}api/folders`)
+            fetch(`${config.API_ENDPOINT}notes`),
+            fetch(`${config.API_ENDPOINT}folders`)
         ])
             .then(([notesRes, foldersRes]) => {
                 if (!notesRes.ok)

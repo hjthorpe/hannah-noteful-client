@@ -16,7 +16,7 @@ class AddFolder extends Component {
 
 
     handleAddFolder= (folderName) => {
-        fetch(`${config.API_ENDPOINT}api/folders`, {
+        fetch(`${config.API_ENDPOINT}folders`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
